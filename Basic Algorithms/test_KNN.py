@@ -12,5 +12,7 @@ class TestKNN(unittest.TestCase):
         self.assertEqual(result2D, np.sqrt(2))
         self.assertEqual(result4D, np.sqrt(20))
 
+    # Inside Main.ipynb, test to make sure model has a good accuracy
+
 if __name__ == "__main__":
     unittest.main()
