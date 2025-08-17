@@ -2,11 +2,9 @@ import numpy as np
 from collections import Counter
 
 def get_euclidean_distance(x1, x2):
-    """ Can be in any number of dimensions
-    Ex:
-    get_euclidean_distance(numpy.array([3, 2]), numpy.array([1, 2]))
-    get_euclidean_distance(numpy.array([1, 5, 4]), numpy.array([1, 3, 2]))
-
+    """ 
+    Can be in any number of dimensions
+    
     Parameters
     -------------
     x1: numpy.ndarray
@@ -46,6 +44,8 @@ class KNN:
         Parameters
         -------------     
         X_test: np.ndarray
+
+        returns array(string)
         """
         preds = [self._predict(x) for x in X_test]
         return preds
@@ -57,6 +57,8 @@ class KNN:
         Parameters
         -------------
         x: np.ndarray
+
+        returns string
         """
 
         # 1. Find distance from every point in the training sample
